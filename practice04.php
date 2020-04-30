@@ -31,15 +31,15 @@ echo '足し算合計は' .$ccc ."\n";
 
 //課題3
 function func($arr){
-    $total = 0;
+    $total = 1;
     foreach($arr as $ar){
-        $total += $ar;
+        $total *= $ar;
     }
     return $total;
 }
 $array = [1,3,5,7,9];
 $total = func($array);
-echo '配列内の合計は' . $total ."\n";
+echo '配列内の数字を全てかけた合計は' . $total ."\n";
 
 
 //課題4
