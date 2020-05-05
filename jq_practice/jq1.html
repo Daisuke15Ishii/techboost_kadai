@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        //課題1~2
+        var kazu = prompt('適当な値(半角)を入力してください');
+        if(kazu >= 0){
+            alert('入力された値は「正の数」です');
+        }else if(kazu < 0){
+            alert('入力された値は「負の数」です');
+        }else{
+            alert('正負が判別できませんでした。数値を入力してください');
+        }
+
+        //課題3~5
+        var animals1 = ['パンダ', 'ライオン', 'キリン'];
+        var input_animal1 = prompt('動物を入力してください');
+        var i = 0;
+        while(i < animals1.length){
+            if(input_animal1 == animals1[i]){
+                alert("ライオンが格納されている配列キー：" + i);
+                break;
+            }
+            alert(animals1[i]);
+            i++;
+        }
+
+        //課題6~7
+        var animals2 =[
+            {'name':'パンダ', 'weight':80},
+            {'name':'ライオン', 'weight':200},
+            {'name':'キリン', 'weight':300}
+        ];
+        var input_animal2 = prompt('次の動物の中から一種類の名前を入力してください。「パンダ」「ライオン」「キリン」');
+        var j = 0;
+        while(j < animals2.length){
+            if(input_animal2 == animals2[j].name){
+                alert(animals2[j].name + "の体重：" + animals2[j].weight);
+                break;
+            }
+            j++;
+            if(j == animals2.length){
+                alert("3種類以外の動物が入力されました。");
+                break;
+            }
+        }
+
+        //課題8
+        var r = prompt('円の半径を入力してください');
+        function menseki(r){
+            return Math.PI * r * r;
+        }
+        alert('半径' + r + 'の円の面積は' + menseki(r));
+    </script>
+</body>
+</html>
