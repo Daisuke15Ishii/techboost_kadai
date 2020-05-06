@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        textarea {
+            width: 80%;
+            height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>課題1</h1>
+    <h1>jQueryのイベント</h1>
+    <p id="click_me">ここをクリック</p>
+
+    <h1>課題2</h1>
+    <h1>jQueryとフォーム</h1>
+    <form>
+        <dl>
+            <dt>メールアドレス</dt>
+            <dd><input type="text" id="email"></dd>
+            <dt>パスワード</dt>
+            <dd><input type="password" id="password"></dd>
+        </dl>
+        <input type="button" id="login" value="ログイン">
+    </form>
+
+    <h1>課題3</h1>
+    <h1>jQueryとAjax</h1>
+    <form>
+        <input type="button" id="get_bank_list" value="銀行データ一覧を取得">
+        <textarea id="result"></textarea>
+    </form>
+
+
+    <h1>課題5~6</h1>
+    <h1>jQueryの郵便番号→住所変換プラグイン</h1>
+
+    <button id="btn_post" type="button">郵便番号から住所自動入力</button>
+    <dl>
+      <dt>郵便番号</dt>
+      <dd><input type="text" id="zip"></dd>
+      <dt>都道府県</dt>
+      <dd><input type="text" id="pref"></dd>
+      <dt>市区町村</dt>
+      <dd><input type="text" id="city"></dd>
+      <dt>町名等</dt>
+      <dd><input type="text" id="street"></dd>
+    </dl>
+
+
+    <!-- jQueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+    <!-- 郵便番号→住所変換用プラグインの読み込み -->
+    <script src="https://jpostal-1006.appspot.com/jquery.jpostal.js"></script>
+
+    <!-- 自作JavaScriptの読み込み -->
+    <script src="jq3.js"></script>
+</body>
+</html>
